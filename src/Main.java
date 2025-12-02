@@ -6,13 +6,13 @@ public class Main
     {
         Scanner input = new Scanner(System.in);
 
-//        PrintString("\nErsten Summanden eingeben: ");
-//        int n1=input.nextInt();
-//        PrintString("\nZweiten Summanden eingeben: ");
-//        int n2=input.nextInt();
-//
-//        String OutPutString = "\nDas Ergebnis ist: " + Taschenrechner.Add(n1,n2);
-//        PrintString(OutPutString);
+        PrintString("\nErsten Summanden eingeben: ");
+        int n1=input.nextInt();
+        PrintString("\nZweiten Summanden eingeben: ");
+        int n2=input.nextInt();
+
+        String OutPutString = "\nDas Ergebnis ist: " + Taschenrechner.Add(n1,n2);
+        PrintString(OutPutString);
 
 
     }
