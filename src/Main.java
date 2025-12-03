@@ -39,14 +39,10 @@ public class Main
         printSumMessage(input.nextInt(), input.nextInt());
 
         // zu 3
-
-        printString("\nErsten Summanden eingeben: ");
-        int n1=input.nextInt();
-        printString("\nZweiten Summanden eingeben: ");
-        int n2=input.nextInt();
-
-        String OutPutString = "\nDas Ergebnis ist: " + Taschenrechner.Add(n1,n2);
-        printString(OutPutString);
+        printString(String.valueOf(Taschenrechner.add(1,2)));
+        printString(String.valueOf(Taschenrechner.sub(14,7)));
+        printString(String.valueOf(Taschenrechner.multiply(2,3)));
+        printString(String.valueOf(Taschenrechner.divide(15,5)));
     }
 
     public static void printString(String str)
