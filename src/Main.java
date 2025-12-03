@@ -35,8 +35,10 @@ public class Main
         // zu 1
         printString(String.valueOf(input.nextInt()));
 
-
         // zu 2
+        printSumMessage(input.nextInt(), input.nextInt());
+
+        // zu 3
 
         printString("\nErsten Summanden eingeben: ");
         int n1=input.nextInt();
@@ -139,7 +141,7 @@ public class Main
     // 2. Methode ruft andere Methode auf
     // Schreibe eine Methode printSumMessage, die zwei Zahlen addiert (mithilfe einer add-Methode) und das Ergebnis in einem Satz ausgibt.
 
-    public static void printSummessage(int a, int b)
+    public static void printSumMessage(int a, int b)
     {
         String message = "Das Ergebnis von " + a + " und " + b + " ist " + add(a, b);
         printString(message);
