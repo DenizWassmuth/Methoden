@@ -9,7 +9,7 @@ public class Main
         // LEVEL 1
 
         // zu 1
-        printHello("Hello Welt");
+        printHello("Hallo Welt");
 
         // zu 2
         printString(getGreeting());
@@ -24,18 +24,22 @@ public class Main
         printString(String.valueOf(add(1,2)));
 
         // zu 2
-        printString(String.valueOf(calculateArea(1,2)));
+        printString(String.valueOf(calculateArea(15,5)));
 
         // zu 3
         Scanner input = new Scanner(System.in);
+
+        System.out.print("\nEnter an integer to check if it is positiv or negative: ");
         checkPositive(input.nextInt());
 
         // LEVEL 3
 
         // zu 1
-        printString(String.valueOf(input.nextInt()));
+        System.out.print("\nEnter an integer to check if it is an odd or an even number: ");
+        printString(String.valueOf(isEven(input.nextInt())));
 
         // zu 2
+        System.out.println("\nEnter two int values to add them!");
         printSumMessage(input.nextInt(), input.nextInt());
 
         // zu 3
@@ -75,7 +79,7 @@ public class Main
     //    Schreibe eine Methode printName, die einen Namen als Parameter erhält und "Hallo <Name>" ausgibt.
     public static void halloUser(String userName)
     {
-        printString("Hallo " + userName);
+        printString("Hallo " + userName + "!");
     }
 
 
@@ -107,6 +111,8 @@ public class Main
             printString("Negative Zahl");
             return;
         }
+
+       printString("Positive Zahl");
     }
 
 
@@ -120,11 +126,11 @@ public class Main
     {
         if (zahl % 2 == 0)
         {
-            printString("gerade Zahl");
+            System.out.print("gerade Zahl");
             return true;
         }
 
-        printString("ungerade Zahl");
+        System.out.print("ungerade Zahl");
         return false;
     }
 
