@@ -7,17 +7,17 @@ public class Taschenrechner
         return a+b;
     }
 
-    static int  Sub(int a,int b)
+    public static int  Sub(int a,int b)
     {
         return a-b;
     }
 
-    static int Multiply(int a,int b)
+    public static int Multiply(int a,int b)
     {
         return a*b;
     }
 
-    static int Divide(double a,double b)
+    public static int Divide(double a,double b)
     {
         return (int)(a/b);
     }
