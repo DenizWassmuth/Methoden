@@ -1,3 +1,5 @@
+import Utils.Taschenrechner;
+
 import java.util.Scanner;
 
 public class Main
@@ -13,8 +15,6 @@ public class Main
 
         String OutPutString = "\nDas Ergebnis ist: " + Taschenrechner.Add(n1,n2);
         PrintString(OutPutString);
-
-
     }
 
     public static void PrintString(String str)
