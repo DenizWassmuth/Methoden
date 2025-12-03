@@ -30,6 +30,14 @@ public class Main
         Scanner input = new Scanner(System.in);
         checkPositive(input.nextInt());
 
+        // LEVEL 3
+
+        // zu 1
+        printString(String.valueOf(input.nextInt()));
+
+
+        // zu 2
+
         printString("\nErsten Summanden eingeben: ");
         int n1=input.nextInt();
         printString("\nZweiten Summanden eingeben: ");
@@ -104,8 +112,44 @@ public class Main
     {
         if (zahl < 0)
         {
-            printString("Zahl ist negativNegative Zahl");
+            printString("Negative Zahl");
             return;
         }
     }
+
+
+    // LEVEL 3
+
+    // 1. Methode mit Bedingung und Rückgabewert
+    // Erstelle eine Methode isEven, die prüft, ob eine Zahl gerade ist.
+    // Gibt true zurück, wenn sie gerade ist, sonst false.
+
+    public static boolean isEven(int zahl)
+    {
+        if (zahl % 2 == 0)
+        {
+            printString("gerade Zahl");
+            return true;
+        }
+
+        printString("ungerade Zahl");
+        return false;
+    }
+
+    // 2. Methode ruft andere Methode auf
+    // Schreibe eine Methode printSumMessage, die zwei Zahlen addiert (mithilfe einer add-Methode) und das Ergebnis in einem Satz ausgibt.
+
+    public static void printSummessage(int a, int b)
+    {
+        String message = "Das Ergebnis von " + a + " und " + b + " ist " + add(a, b);
+        printString(message);
+    }
+
+    // 3. Mini-Projekt: Taschenrechner
+    //    Implementiere die Methoden:
+    //    add(int a, int b)
+    //    subtract(int a, int b)
+    //    multiply(int a, int b)
+    //    divide(double a, double b) (achte auf Division durch 0!)
+    //    Rufe die Methoden in main mit verschiedenen Werten auf.
 }
